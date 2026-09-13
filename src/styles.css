@@ -1,0 +1,81 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f6fa;
+  color: #151824;
+}
+
+.app {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+header h1,
+section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.composer,
+.memo-list {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 10px rgba(9, 12, 20, 0.08);
+}
+
+#memo-form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  padding: 0.6rem;
+  border: 1px solid #c7ccdb;
+  border-radius: 8px;
+}
+
+button {
+  background: #1f3bb3;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1b3299;
+}
+
+#memo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.memo-item {
+  border: 1px solid #e0e5f4;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.memo-item h3,
+.memo-item p {
+  margin: 0;
+}
