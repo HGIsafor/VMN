@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VN-N</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>VN-N</h1>
+        <p>Voice memos + notes in one place</p>
+      </header>
+
+      <section class="composer" aria-label="Create memo with note">
+        <h2>New memo</h2>
+        <form id="memo-form">
+          <label>
+            Memo title
+            <input id="memo-title" name="title" type="text" required maxlength="80" />
+          </label>
+
+          <label>
+            Audio clip (optional)
+            <input id="memo-audio" name="audio" type="file" accept="audio/*" />
+          </label>
+
+          <label>
+            Note tied to this memo
+            <textarea id="memo-note" name="note" required rows="5" maxlength="2000"></textarea>
+          </label>
+
+          <button type="submit">Save memo + note</button>
+        </form>
+      </section>
+
+      <section class="memo-list" aria-label="Saved memos">
+        <h2>Saved memo-note pairs</h2>
+        <ul id="memo-list"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
